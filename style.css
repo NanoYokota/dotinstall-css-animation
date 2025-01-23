@@ -5,10 +5,10 @@
   height: 80px;
   background-color: pink;
   transition-property: transform;
-  transition-duration: 500ms;
-  transition-delay: 1s;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
 }
 
 .box:hover {
-  transform: translateX(100px);
+  transform: translateX(500px);
 }
