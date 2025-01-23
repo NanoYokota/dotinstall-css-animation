@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+button {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 300px;
+  padding: 16px;
+}
+
 .message {
   background-color: black;
   width: 300px;
@@ -31,5 +39,6 @@
   100% {
     transform: translateY(10px);
     opacity: 0;
+    pointer-events: none;
   }
 }
