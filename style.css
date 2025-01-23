@@ -4,12 +4,11 @@
   width: 80px;
   height: 80px;
   background-color: pink;
-  /* transition-property: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-out; */
-  transition: transform 2s linear 1s;
+  /* transition: transform 1s; */
+  transition: transform 1s, border-radius 1s;
 }
 
 .box:hover {
-  transform: translateX(500px);
+  transform: translateX(100px);
+  border-radius: 50%;
 }
