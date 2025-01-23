@@ -1,18 +1,35 @@
 @charset "UTF-8";
 
-.loading {
-  width: 32px;
-  height: 32px;
-  border-top: 8px solid red;
-  border-right: 8px solid blue;
-  border-bottom: 8px solid green;
-  border-left: 8px solid yellow;
-  border-radius: 50%;
-  animation: .8s rotate infinite linear;
+.message {
+  background-color: black;
+  width: 300px;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  animation: popup 2s forwards;
 }
 
-@keyframes rotate {
+@keyframes popup {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  20% {
+    transform: none;
+    opacity: 1;
+  }
+
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+
   100% {
-    transform: rotate(360deg);
+    transform: translateY(10px);
+    opacity: 0;
   }
 }
