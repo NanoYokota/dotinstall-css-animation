@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
-button {
-  all: unset;
-  color: black;
-  font-weight: bold;
-  border: 2px solid black;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 300ms, color 300ms;
+.loading {
+  width: 32px;
+  height: 32px;
+  border-top: 8px solid red;
+  border-right: 8px solid blue;
+  border-bottom: 8px solid green;
+  border-left: 8px solid yellow;
+  border-radius: 50%;
+  animation: .8s rotate infinite linear;
 }
 
-button:hover {
-  background: black;
-  color: white;
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
